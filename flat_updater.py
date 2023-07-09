@@ -8,11 +8,11 @@ import chromedriver_binary
 
 config = {
     'login': {
-        'username': 'kontakt@vdst-erlangen.de',  # Your email address
-        'password': '1881-idvdstgw',  # Your password
+        'username': '',  # Your email address
+        'password': '',  # Your password
     },
     'offer': {
-        'id': '9981403',  # Your offer ID
+        'id': '',  # Your offer ID
         'interval': 10,  # Update interval in minutes
     },
 }
