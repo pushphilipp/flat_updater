@@ -1,20 +1,17 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+import json
+import os
 import time
 import random
 
 
-config = {
-    'login': {
-        'username': '',  # Your email address
-        'password': '',  # Your password
-    },
-    'offer': {
-        'id': '',  # Your offer ID
-        'interval': 10,  # Update interval in minutes
-    },
-}
+
+# Load configuration from external JSON file located next to this script.
+CONFIG_FILE = os.path.join(os.path.dirname(__file__), "config.json")
+with open(CONFIG_FILE, "r") as fh:
+    config = json.load(fh)
 
 screen = {
     'width': 640,

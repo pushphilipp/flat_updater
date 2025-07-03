@@ -12,7 +12,7 @@ You'll need to install **selenium-webdriver** first:
 pip install selenium
 ```
 
-Then adjust the config at the beginning of the file and run the script
+Then adjust the configuration in `config.json` and run the script
 
 ```
 python flat_updater.py
