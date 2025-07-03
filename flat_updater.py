@@ -21,7 +21,7 @@ screen = {
     'height': 480
 }
 
-def update_offer(interval):
+def update_offer():
     chrome_options = Options()
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--no-sandbox')
@@ -63,4 +63,15 @@ def update_offer(interval):
 
     driver.quit()
 
-update_offer(config['offer']['interval'])
+
+def main():
+    """Continuously update the offer at the configured interval."""
+    while True:
+        update_offer()
+        wait_minutes = config['offer']['interval']
+        print(f"Waiting {wait_minutes} minutes for next update...")
+        time.sleep(wait_minutes * 60)
+
+
+if __name__ == "__main__":
+    main()
