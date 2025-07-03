@@ -1,0 +1,10 @@
+{
+  "login": {
+    "username": "",
+    "password": ""
+  },
+  "offer": {
+    "id": "",
+    "interval": 10
+  }
+}

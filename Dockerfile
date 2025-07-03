@@ -7,6 +7,7 @@ RUN pip3 install selenium
 
 COPY ./flat_updater.py /opt/bin/flat_updater.py
 COPY ./start.sh /opt/bin/start.sh
+COPY ./config.json /opt/bin/config.json
 RUN sudo chmod +x /opt/bin/start.sh
 
 
